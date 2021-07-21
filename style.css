@@ -1,0 +1,74 @@
+/* .container is a class */
+.container{
+    background-image: url("images/backgroundImg.jpg");
+    /* prevent repeat of image in container */
+    background-repeat: no-repeat;
+    /* cover completly covers background */
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+*{
+    font-family: helvetica;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.subContainer{
+    background: #eee;
+    opacity: .4;
+
+    overflow: hidden;
+    position: absolute;
+    /* transform works like margin */
+    box-shadow: 10px 10px 5px black, -10px -10px 5px black;
+    border-radius: 20px;
+
+}
+header{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+.MenuBar{
+    right: 0;
+    width: 80%;
+    margin-top: 20px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 6px;
+}
+header ul li a:hover{
+    background: black;
+    color: white;
+    transition: all .5s cubic-bezier(0.1,0.7,1.0,0.1);
+    border-radius: 7px;
+}
+.callToAction{
+    background: black;
+    color: white;
+    border-radius: 7px;
+}
+.callToAction:hover{
+    display: inline-block;
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
+
+}
+.callToAction:active{
+    transform: rotate(-360deg);
+    transition: all 1s ease-in-out;
+}
+
